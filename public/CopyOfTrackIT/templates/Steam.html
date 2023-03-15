@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TrackIt!</title>
+	<style>
+		body {
+			background-color: #e6f2ff;
+			color: #333;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: white; 
+			padding: 20px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+		}
+		h1 {
+			font-size: 36px;
+			margin: 0; 
+		}
+		nav {
+			background-color: #66b3ff; 
+			padding: 10px;
+			margin-top: 10px;
+			overflow: auto;
+		}
+		nav a {
+			display: block;
+			float: left;
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+		nav a:hover {
+			background-color: #0059b3; 
+		}
+		main {
+			padding: 20px;
+			margin-top: 10px;
+		}
+		section {
+			margin-bottom: 20px;
+			border-bottom: 1px solid #ccc; 
+			padding-bottom: 20px;
+		}
+		section:last-of-type {
+			border-bottom: none; 
+			padding-bottom: 0;
+		}
+		h2 {
+			font-size: 24px;
+			margin-top: 0;
+		}
+		p {
+			line-height: 1.5; 
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1><center>TrackIt!</center></h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+    <a href="About.html">About</a>
+		<a href="LeagueOfLegends.html">League of Legends</a>
+    <a href="Apex.html">Apex Legends</a>
+    <a href="Steam.html">Steam</a>
+    <a href="Mojang.html">Mojang</a>
+    <a href="Roblox.html">ROBLOX</a>
+	</nav>
+ <main>
+		<section>
+			<h2><center>Welcome to the Steam Tracker!</center></h2>
+			<p><center><label for="user-input">Enter your Steam Username:</label>
+				<form method="POST" action="{{ url_for('views.getSteamID') }}">				
+					<input type="text" id="user-id" name="user-id">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+		</section>
+ </main>
