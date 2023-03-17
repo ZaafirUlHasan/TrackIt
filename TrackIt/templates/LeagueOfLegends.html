@@ -72,11 +72,11 @@
 	</nav>
  <main>
 		<section>
-			<h2><center>Welcome to the Steam Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Steam Username:</label>
-				<form method="POST" action="{{ url_for('views.getSteamID') }}">				
+			<h2><center>Welcome to the League of Legends Tracker!</center></h2>
+			<p><center><label for="user-input">Enter your Summoner Name and Region:</label>
+				<form method="POST" action="{{ url_for('views.getLeagueOfLegendsID') }}">				
 					<input type="text" id="user-id" name="user-id">
+					<input type="text" id="region" name="region">
 					<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
-		</section>
+				</form>		</section>
  </main>
