@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>{{ title }}</title>
+</head>
+<body>
+  <center>
+  <h1>{{ heading }}</h1>
+    {% for game, playtime in game_playtime.items() %}
+  <p>{{ game }}:{{ playtime }} minutes </p>
+  {% endfor %}
+</center>
+</body>
+</html>
