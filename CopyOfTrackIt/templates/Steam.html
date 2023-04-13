@@ -72,11 +72,11 @@
 	</nav>
  <main>
 		<section>
-			<h2><center>Welcome to the Mojang Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Mojang Username and Password:</label><center></p>
-			<form method="POST" action="{{ url_for('views.getMojangID') }}">				
-				<input type="text" id="user-id" name="user-id">
-				<input type="text" id="password" name="password">
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
-			
+			<h2><center>Welcome to the Steam Tracker!</center></h2>
+			<p><center><label for="user-input">Enter your Steam ID:</label>
+				<form method="POST" action="{{ url_for('Steam.getSteamID') }}">				
+					<input type="text" id="user-id" name="user-id">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+		</section>
+ </main>
