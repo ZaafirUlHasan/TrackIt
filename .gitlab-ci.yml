@@ -4,6 +4,7 @@ pages:
   stage: deploy
   script:
     - echo "The site will be deployed to $CI_PAGES_URL"
+    - python my_script.py
   artifacts:
     paths:
       - TrackIt
