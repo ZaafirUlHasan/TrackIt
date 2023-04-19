@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"
+	<title>TrackIt!</title>
+</head>
+<body>
+	<header>
+		<h1><center>TrackIt!</center></h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+    <a href="About.html">About</a>
+		<a href="LeagueOfLegends.html">League of Legends</a>
+    <a href="Apex.html">Apex Legends</a>
+    <a href="Steam.html">Steam</a>
+    <a href="Mojang.html">Mojang</a>
+    <a href="Roblox.html">ROBLOX</a>
+	</nav>
+ <main>
+		<section>
+			<h2><center>Welcome to the League of Legends Tracker!</center></h2>
+			<p><center><label for="user-input">Enter your Summoner Name and Region:</label>
+				<form method="POST" action="{{ url_for('views.getLeagueOfLegendsID') }}">				
+					<input type="text" id="user-id" name="user-id">
+					<input type="text" id="region" name="region">
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>		</section>
+ </main>
