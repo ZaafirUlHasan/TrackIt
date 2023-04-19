@@ -6,5 +6,9 @@ pages:
     - echo "The site will be deployed to $CI_PAGES_URL"
   artifacts:
     paths:
-      - TrackIt
+<<<<<<< HEAD
+      - public
+  
+=======
+
 
