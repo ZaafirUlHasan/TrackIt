@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>TrackIt!</title>
-	
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 	<header>
@@ -24,7 +24,7 @@
 				<form method="POST" action="{{ url_for('roblox.getRobloxID') }}">				
 					<input type="text" id="user-id" name="user-id">
 					<button type="submit" class="btn btn-primary">Submit</button>
-					<center><img src="roblox.jpg" alt="Roblox" width="500" height="300"></center>
+					<center><img src="{{ url_for('static', filename='images/roblox.jpg') }}" width="500" height="300"></center>
 
 				</form>
 				
