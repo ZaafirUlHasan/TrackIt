@@ -1,12 +1,18 @@
 <html>
 <head>
   <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
   <center>
   <h1>{{ heading }}</h1>
+  <img src="{{ img_data }}">
     {% for game in game_list %}
   <p>{{ game }}</p>
+  {% endfor %}
+  <h2>{{ heading2 }}</h2>
+  {% for badge in badges %}
+  <p>{{ badge }}</p>
   {% endfor %}
 </center>
 </body>

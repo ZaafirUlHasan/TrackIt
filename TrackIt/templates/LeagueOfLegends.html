@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css"
 	<title>TrackIt!</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 	<header>
@@ -21,9 +21,11 @@
 		<section>
 			<h2><center>Welcome to the League of Legends Tracker!</center></h2>
 			<p><center><label for="user-input">Enter your Summoner Name and Region:</label>
-				<form method="POST" action="{{ url_for('views.getLeagueOfLegendsID') }}">				
+				<form method="POST" action="{{ url_for('LeagueOfLegends.getLeagueOfLegendsID') }}">				
 					<input type="text" id="user-id" name="user-id">
 					<input type="text" id="region" name="region">
 					<button type="submit" class="btn btn-primary">Submit</button>
+					      	<center><img src="lol.jpg" alt="League of Legends" width="500" height="300"></center>
+
 				</form>		</section>
  </main>

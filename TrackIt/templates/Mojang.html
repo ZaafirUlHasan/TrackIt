@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css"
 	<title>TrackIt!</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 	<header>
@@ -20,10 +20,12 @@
  <main>
 		<section>
 			<h2><center>Welcome to the Mojang Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Mojang Username and Password:</label><center></p>
-			<form method="POST" action="{{ url_for('views.getMojangID') }}">				
+			<p><center><label for="user-input">Enter your Mojang Email, Username, and Password:</label><center></p>
+			<form method="POST" action="{{ url_for('Mojang.getMojangID') }}">				
 				<input type="text" id="user-id" name="user-id">
+				<input type="text" id="user-name" name="user-name">
 				<input type="password" id="password" name="password">
 				<button type="submit" class="btn btn-primary">Submit</button>
+				<center><img src="minecraft.jpg" alt="Mojang" width="500" height="300"></center>
 			</form>
 			
