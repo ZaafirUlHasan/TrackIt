@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <center>
+  <h1>{{ heading }}</h1>
+  <h2>Legend Stats:</h2>
+  {% for legend, stats in legend_stats.items() %}
+  <p><b>{{ legend }}</b></p>
+  <ul>
+    <li>Kills: {{ stats["kills"] }}</li>
+    <li>Winning Kills: {{ stats["winning kills"] }}</li>
+    <li>Matches Played: {{ stats["matches played"] }}</li>
+  </ul>
+  {% endfor %}
+  <h2>Overall Stats:</h2>
+  <ul>
+    <li>Total Kills: {{ overall_stats["total kills"] }}</li>
+    <li>Total Matches Played: {{ overall_stats["total matches played"] }}</li>
+    <li>Approximate Playtime Minutes: {{ overall_stats["approximate playtime minutes"] }}</li>
+  </ul>
+  </center>
+</body>
+</html>
