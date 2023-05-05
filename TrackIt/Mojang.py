@@ -37,10 +37,15 @@ def getMojangStats():
         uuid = uuid_response.json()['id']
         skin_response = requests.get(f'https://crafatar.com/skins/{uuid}')
         static_path = os.path.join(current_app.root_path, "static")
-        with open(os.path.join(static_path, "image.jpg"), "wb") as f:
+        with open(os.path.join(static_path, "skin.jpg"), "wb") as f:
             f.write(skin_response.content)
-        image = "/static/image.jpg"
-
-        return render_template("myMojangPage.html", game=creation_date,img_data=image,heading="My Minecraft Skin")
+        skin_image = "/static/skin.jpg"
+        
+        cape_response = requests.get(f'https://crafatar.com/capes/{uuid}')
+        static_path = os.path.join(current_app.root_path, "static")
+        with open(os.path.join(static_path, "cape.jpg"), "wb") as f:
+            f.write(cape_response.content)
+        cape_image = "/static/cape.jpg"
+        return render_template("myMojangPage.html", game=creation_date,skin_img_data=skin_image,cape_img_data=cape_image,skin_heading="My Minecraft Skin",cape_heading="My Minecraft Cape")
     except:
         return render_template("Mojang.html")
