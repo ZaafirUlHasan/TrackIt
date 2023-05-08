@@ -1,8 +1,8 @@
 import requests
 import json
 
-name = input()
-tag = input()
+name = input("Enter Riot username: ")
+tag = input("Enter Riot tag: ")
 profile = requests.get(f'https://api.henrikdev.xyz/valorant/v1/account/{name}/{tag}')
 profile = json.loads(profile.content)
 puuid = profile['data']['puuid']
