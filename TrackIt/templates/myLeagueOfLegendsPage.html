@@ -6,9 +6,12 @@
 <body>
   <center>
   <h1>{{ heading }}</h1>
-  <img src="{{ image }}" alt="My Image">
+  <img src="{{ image }}" alt="No Icon">
   {% for game, playtime in statDict.items() %}
   <p>{{ game }}: {{ playtime }} </p>
+  {% endfor %}
+  {% for i in top5List %}
+  <p>{{ i }} </p>
   {% endfor %}
 </center>
 </body>
