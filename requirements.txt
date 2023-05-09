@@ -1,2 +1,7 @@
-Jinja2
 requests
+json
+PIL
+io
+flask
+jinja2
+datetime
