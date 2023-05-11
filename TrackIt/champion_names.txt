@@ -132,7 +132,7 @@ Thresh 412
 Tristana 18
 Trundle 48
 Tryndamere 23
-Twisted Fate 4
+TwistedFate 4
 Twitch 29
 Udyr 77
 Urgot 6

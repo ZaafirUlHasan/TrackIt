@@ -4,6 +4,7 @@ from roblox import roblox
 from Mojang import Mojang
 from Steam import Steam
 from LeagueOfLegends import LeagueOfLegends
+from Valorant import Valorant
 
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
@@ -11,6 +12,7 @@ app.register_blueprint(roblox, url_prefix="/")
 app.register_blueprint(Mojang, url_prefix="/")
 app.register_blueprint(Steam, url_prefix="/")
 app.register_blueprint(LeagueOfLegends, url_prefix="/")
+app.register_blueprint(Valorant, url_prefix="/")
 
 @app.route("/")
 def index():
