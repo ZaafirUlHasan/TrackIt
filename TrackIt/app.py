@@ -5,6 +5,7 @@ from Mojang import Mojang
 from Steam import Steam
 from LeagueOfLegends import LeagueOfLegends
 from Valorant import Valorant
+from Apex import Apex
 
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
