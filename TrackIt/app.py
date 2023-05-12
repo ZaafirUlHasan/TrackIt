@@ -14,6 +14,7 @@ app.register_blueprint(Mojang, url_prefix="/")
 app.register_blueprint(Steam, url_prefix="/")
 app.register_blueprint(LeagueOfLegends, url_prefix="/")
 app.register_blueprint(Valorant, url_prefix="/")
+app.register_blueprint(Apex, url_prefix="/")
 
 @app.route("/")
 def index():
