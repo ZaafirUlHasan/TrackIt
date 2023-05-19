@@ -87,4 +87,4 @@
               <p>Our Roblox API takes the user’s account ID and displays their 3D character model, favorite games, and total badges earned. The account ID can be found by logging in to their Roblox account, going to their profile page, and then checking the link of the profile page that should include an 8-number long ID.</p>
               <p>Example of Roblox ID:</p>
               <p>25447559</p>
-
+</main>
