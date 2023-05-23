@@ -19,3 +19,8 @@ def goToAbout():
 @views.route("Apex.html")
 def goToApex():
     return render_template("Apex.html")
+
+
+@views.route("UserGuide.html")
+def goToUserGuide():
+    return render_template("UserGuide.html")

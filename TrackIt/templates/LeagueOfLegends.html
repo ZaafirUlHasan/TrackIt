@@ -3,6 +3,12 @@
 <head>
 	<title>TrackIt!</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<style>
+		.region-list {
+			float: left;
+			margin-right: 20px;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -29,5 +35,25 @@
 					<input type="text" id="region" name="region">
 					<button type="submit" class="btn btn-primary">Submit</button>
 <center><img src="{{ url_for('static', filename='images/lol.jpg') }}" width="500" height="300"></center>
-				</form>		</section>
+</section>
+<aside class="region-list">
+<p>Brazil: BR1</p>
+	<p>Europe Nordic & East: EUN1</p>
+	<p>Europe West: EUW1</p>
+	<p>Latin America North: LA1</p>
+	<p>Latin America South: LA2</p>
+	<p>North America: NA1</p>
+	<p>Oceania: OCE/OC1</p>
+	<p>Russia: RU1</p>
+	<p>Turkey: TR1</p>
+	<p>Japan: JP1</p>
+	<p>Korea: KR</p>
+	<p>The Philippines: PH2</p>
+	<p>Singapore, Malaysia, & Indonesia: SG2</p>
+	<p>Taiwan, Hong Kong, and Macao: TW2</p>
+	<p>Thailand: TH2</p>
+	<p>Vietnam: VN2</p>
+	<p>Public Beta Environment: PBE</p>
+	</aside>
+				</form>		
  </main>
