@@ -24,3 +24,7 @@ def goToApex():
 @views.route("UserGuide.html")
 def goToUserGuide():
     return render_template("UserGuide.html")
+
+@views.route("Blizzard.html")
+def goToBlizzard():
+    return render_template("Blizzard.html")
