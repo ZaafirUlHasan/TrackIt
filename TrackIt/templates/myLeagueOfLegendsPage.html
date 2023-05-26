@@ -4,6 +4,21 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+  <header>
+		<h1><center>TrackIt!</center></h1>
+	</header>
+  <nav>
+		<a href="index.html">Home</a>
+    <a href="About.html">About</a>
+		<a href="LeagueOfLegends.html">League of Legends</a>
+    <a href="Apex.html">Apex Legends</a>
+    <a href="Steam.html">Steam</a>
+    <a href="Mojang.html">Mojang</a>
+    <a href="Roblox.html">ROBLOX</a>
+	<a href="Valorant.html">Valorant</a>
+	<a href="UserGuide.html">User Guide</a>
+
+	</nav>
   <center>
   <h1>{{ heading }}</h1>
   <img src="{{ image }}" alt="No Icon">
@@ -14,5 +29,6 @@
   <p>{{ i }} </p>
   {% endfor %}
 </center>
+</main>
 </body>
 </html>

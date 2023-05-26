@@ -23,10 +23,12 @@
  <main>
 		<section>
 			<h2><center>Welcome to the Steam Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Steam ID:</label>
-				<form method="POST" action="{{ url_for('Steam.getSteamID') }}">				
-					<input type="text" id="user-id" name="user-id">
-					<button type="submit" class="btn btn-primary">Submit</button>
+				<form method="POST" action="{{ url_for('Steam.getSteamID') }}">		
+					<p><center><label for="user-input">Enter your Steam ID:</label>		
+					<input type="text" id="user-id" name="user-id"></center></p>
+					<div style="text-align:center;">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
 					<center><img src="{{ url_for('static', filename='images/steam.jpg') }}" width="500" height="300"></center>
 				</form>
 		</section>

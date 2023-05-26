@@ -23,11 +23,11 @@
  <main>
 		<section>
 			<h2><center>Welcome to the ROBLOX Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your ROBLOX Username:</label>
-				<form method="POST" action="{{ url_for('roblox.getRobloxID') }}">				
-					<input type="text" id="user-id" name="user-id">
-					<button type="submit" class="btn btn-primary">Submit</button>
-					<center><img src="{{ url_for('static', filename='images/roblox.jpg') }}" width="500" height="300"></center>
-
+				<form method="POST" action="{{ url_for('roblox.getRobloxID') }}">		
+					<p><center><label for="user-input">Enter your ROBLOX Username:</label>		
+					<input type="text" id="user-id" name="user-id"></center></p>
+					<div style="text-align:center;">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
 				</form>
 				
