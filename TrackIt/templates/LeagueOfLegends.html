@@ -29,11 +29,14 @@
  <main>
 		<section>
 			<h2><center>Welcome to the League of Legends Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Summoner Name and Region:</label>
-				<form method="POST" action="{{ url_for('LeagueOfLegends.getLeagueOfLegendsID') }}">				
-					<input type="text" id="user-id" name="user-id">
-					<input type="text" id="region" name="region">
-					<button type="submit" class="btn btn-primary">Submit</button>
+				<form method="POST" action="{{ url_for('LeagueOfLegends.getLeagueOfLegendsID') }}">		
+					<p><center><label for="user-input">Enter your Summoner Name</label>		
+					<input type="text" id="user-id" name="user-id"></center></p>
+					<p><center><label for="user-input">Enter your Region</label>		
+					<input type="text" id="region" name="region"></center></p>
+					<div style="text-align:center;">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
 <center><img src="{{ url_for('static', filename='images/lol.jpg') }}" width="500" height="300"></center>
 </section>
 <aside class="region-list">

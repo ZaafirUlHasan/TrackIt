@@ -22,11 +22,14 @@
  <main>
 		<section>
 			<h2><center>Welcome to the Valorant Tracker!</center></h2>
-			<p><center><label for="user-input">Enter your Username and Tagline:</label>
-				<form method="POST" action="{{ url_for('Valorant.getValorantStats') }}">				
-					<input type="text" id="user-id" name="user-id">
-					<input type="text" id="tag" name="tag">
+			<form method="POST" action="{{ url_for('Valorant.getValorantStats') }}">				
+				<p><center><label for="user-input">Enter your Summoner Name</label>		
+				<input type="text" id="user-id" name="user-id"></center></p>
+				<p><center><label for="user-input">Enter your Region</label>		
+				<input type="text" id="region" name="region"></center></p>
+				<div style="text-align:center;">
 					<button type="submit" class="btn btn-primary">Submit</button>
+				</div>
 <center><img src="{{ url_for('static', filename='images/valorant.jpg') }}" width="500" height="300"></center>
 				</form>		</section>
  </main>
