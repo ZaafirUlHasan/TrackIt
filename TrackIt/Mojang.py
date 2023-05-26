@@ -1,8 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, current_app
 import requests
-import os
 from mojang import Client
-from datetime import datetime
 
 Mojang = Blueprint(__name__, "Mojang")
 
@@ -27,17 +25,23 @@ def getMojangStats():
         password = request.args.get('password', 'Binski55')
         user_name= request.args.get('user_name', 'DJSALADD')
         client = Client(user_id, password)
+        #Getting user inputs
+        user_id = request.args.get('user_id')
+        password = request.args.get('password')
+        user_name= request.args.get('user_name')
         #Getting the NameInformation class object
+        client = Client(user_id, password)
         name_change_info = client.get_name_change_info()
-
         #Extract the creation date from the name_change_info dictionary
-        creation_date = (f'Created on {datetime.strptime(name_change_info.created_at, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d")}')
-
+        creation_date = name_change_info.created_at.strftime("%d-%m-%y")
+        creation_format = "The Minecraft account was created on "+creation_date
         uuid_response = requests.get(f'https://api.mojang.com/users/profiles/minecraft/{user_name}')
         uuid = uuid_response.json()['id']
         skin = (f'https://crafatar.com/skins/{uuid}')
         cape =(f'https://crafatar.com/capes/{uuid}')
-
-        return render_template("myMojangPage.html", date=creation_date,skin=skin, cape=cape,skin_heading="My Minecraft Skin",cape_heading="My Minecraft Cape")
+        body = (f'https://crafatar.com/renders/body/{uuid}')
+        avatar = (f'https://crafatar.com/avatars/{uuid}')
+        return render_template("myMojangPage.html", date=creation_format,skin=skin, cape=cape, body=body, avatar=avatar,
+                               skin_heading="Skin",cape_heading="Cape", body_heading="Body", avatar_heading="Avatar")
     except:
         return render_template("Mojang.html")

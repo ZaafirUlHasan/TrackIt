@@ -33,3 +33,18 @@ else:
     cape_response.raise_for_status()
     cape_image = Image.open(BytesIO(cape_response.content))
     cape_image.show()
+# Get the player's head
+head_response = requests.get(f'https://crafatar.com/renders/head/{uuid}')
+head_response.raise_for_status()
+head_image = Image.open(BytesIO(head_response.content))
+head_image.show()
+# Get the player's body
+body_response = requests.get(f'https://crafatar.com/renders/body/{uuid}')
+body_response.raise_for_status()
+body_image = Image.open(BytesIO(body_response.content))
+body_image.show()
+# Get the player's avatar
+avatar_response = requests.get(f'https://crafatar.com/avatars/{uuid}')
+avatar_response.raise_for_status()
+avatar_image = Image.open(BytesIO(avatar_response.content))
+avatar_image.show()
