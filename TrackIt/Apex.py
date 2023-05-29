@@ -11,6 +11,10 @@ import json
 
 Apex = Blueprint("Apex", __name__)
 
+@Apex.route("Apex.html")
+def goToApex():
+    return render_template("Apex.html")
+
 @Apex.route("ApexLegends.html")
 def goToApexLegends():
     return render_template("myApexPage.html")
