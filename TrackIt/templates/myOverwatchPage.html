@@ -22,11 +22,11 @@
     </ul>
   </nav>
   <main>
-  <center>
-    <h1>{{ heading }}</h1>
-    <img src="{{ img }}">
-    <p>{{accountLevel}}</p>
-    <p>{{estimate}}</p>
+    <center>
+      <img src="{{ img }}">
+    {% for i in stats %}
+      <p>  {{i}} </p>
+      {% endfor %}
 </center>
 </main>
 </body>
