@@ -3,6 +3,21 @@
 <head>
 	<title>TrackIt!</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<style>
+		.blue-button {
+		  background-color: #4c9ed9;
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  border-radius: 5px;
+		  font-size: 20px;
+		  cursor: pointer;
+		}
+		.image-container {
+			margin-top: 20px;
+			text-align: center;
+		}
+	  </style>
 </head>
 <body>
 	<header>
@@ -34,9 +49,14 @@
 				<p><center><label for="user-input">Password:</label>
 				<input type="password" id="password" name="password"></center></p>	
 				<div style="text-align:center;">
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="blue-button">Submit</button>
 				</div>
-				<center><img src="{{ url_for('static', filename='images/minecraft.png') }}" width="500" height="300"></center>
-				<a href="UserGuide.html#minecraftUserGuide">Go to Minecraft User Guide</a>
+				<div class="image-container"><center><img src="{{ url_for('static', filename='images/minecraft.png') }}" width="500" height="300"></center></div>
+				<h2>Need Help?</h2>
 			</form>
+			<center><button class="blue-button" onclick="window.location.href='UserGuide.html#minecraftUserGuide'">Go to Minecraft User Guide</button></center>
+		</section>
+	</main>
+</body>
+</hmtl>
 			
