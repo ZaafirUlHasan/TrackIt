@@ -25,11 +25,6 @@ def getMojangStats():
         user_id = request.args.get('user_id')
         password = request.args.get('password')
         user_name= request.args.get('user_name')
-        client = Client(user_id, password)
-        #Getting user inputs
-        #Getting the NameInformation class object
-        client = Client(user_id, password)
-        name_change_info = client.get_name_change_info()
 
         uuid_response = requests.get(f'https://api.mojang.com/users/profiles/minecraft/{user_name}')
         uuid = uuid_response.json()['id']
