@@ -3,6 +3,21 @@
 <head>
 	<title>TrackIt!</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<style>
+		.blue-button {
+		  background-color: #4c9ed9;
+		  color: white;
+		  padding: 10px 20px;
+		  border: none;
+		  border-radius: 5px;
+		  font-size: 20px;
+		  cursor: pointer;
+		}
+		.image-container {
+			margin-top: 20px;
+			text-align: center;
+		}
+	  </style>
 </head>
 <body>
 	<header>
@@ -31,10 +46,13 @@
 				<p><center><label for="user-input">Enter your Riot Tag</label>		
 				<input type="text" id="tag" name="tag"></center></p>
 				<div style="text-align:center;">
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<button type="submit" class="blue-button">Submit</button>
 				</div>
-<center><img src="{{ url_for('static', filename='images/valorant.jpg') }}" width="500" height="300"></center>
-				</form>		</section>
-				<a href="UserGuide.html#valorantUserGuide">Go to Valorant User Guide</a>
+				<div class="image-container"><center><img src="{{ url_for('static', filename='images/valorant.jpg') }}" width="500" height="300"></center></div>
+				</form>		
+			</section>
+			<h2>Need Help?</h2>
+			<center><button class="blue-button" onclick="window.location.href='UserGuide.html#valorantUserGuide'">Go to Valorant User Guide</button></center>
  </main>
-
+</body>
+</html>

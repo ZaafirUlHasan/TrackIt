@@ -8,6 +8,19 @@
 			float: left;
 			margin-right: 20px;
 		}
+		.blue-button {
+			background-color: #4c9ed9;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 20px;
+			cursor: pointer;
+		  }
+		  .image-container {
+			  margin-top: 20px;
+			  text-align: center;
+		  }
 	</style>
 </head>
 <body>
@@ -37,29 +50,12 @@
 					<p><center><label for="user-input">Enter your Region</label>		
 					<input type="text" id="region" name="region"></center></p>
 					<div style="text-align:center;">
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="blue-button">Submit</button>
 					</div>
-<center><img src="{{ url_for('static', filename='images/lol.jpg') }}" width="500" height="300"></center>
-<a href="UserGuide.html#leagueUserGuide">Go to League User Guide</a>
+				</form>
+					<div class="image-container"><center><img src="{{ url_for('static', filename='images/lol.jpg') }}" width="500" height="300"></center></div>
+					<h2>Need Help?</h2>
+			<center><button class="blue-button" onclick="window.location.href='UserGuide.html#leagueUserGuide'">Go to League User Guide</button></center>
 </section>
-<aside class="region-list">
-<p>Brazil: BR1</p>
-	<p>Europe Nordic & East: EUN1</p>
-	<p>Europe West: EUW1</p>
-	<p>Latin America North: LA1</p>
-	<p>Latin America South: LA2</p>
-	<p>North America: NA1</p>
-	<p>Oceania: OCE/OC1</p>
-	<p>Russia: RU1</p>
-	<p>Turkey: TR1</p>
-	<p>Japan: JP1</p>
-	<p>Korea: KR</p>
-	<p>The Philippines: PH2</p>
-	<p>Singapore, Malaysia, & Indonesia: SG2</p>
-	<p>Taiwan, Hong Kong, and Macao: TW2</p>
-	<p>Thailand: TH2</p>
-	<p>Vietnam: VN2</p>
-	<p>Public Beta Environment: PBE</p>
-	</aside>
-				</form>		
- </main>
+		
+</main>
