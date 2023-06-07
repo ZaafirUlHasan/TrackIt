@@ -11,19 +11,15 @@ def goToMojang():
 
 @Mojang.route('MojangID', methods=['POST'])
 def getMojangID():
-    user_id = request.form.get('user-id')
-    password = request.form.get('password')
     user_name = request.form.get('user-name')
-    return redirect(url_for('Mojang.getMojangStats', user_id=user_id, password=password, user_name=user_name))
+    return redirect(url_for('Mojang.getMojangStats', user_name=user_name))
 
 @Mojang.route('MojangStats', methods=['GET', 'POST'])
 def getMojangStats():
     if request.method == 'POST':
         return redirect(url_for('Mojang.getMojangID'))
     try:
-    #Placeholder, it is my minecraft account, user input will be needed.
-        user_id = request.args.get('user_id')
-        password = request.args.get('password')
+        #Getting user input
         user_name= request.args.get('user_name')
 
         uuid_response = requests.get(f'https://api.mojang.com/users/profiles/minecraft/{user_name}')
