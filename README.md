@@ -31,6 +31,9 @@ You will get a message like this in the terminal:
 
 You can now copy the link from 'Running on {link}'(http://127.0.0.1:5000 in this case) into your browser to launch the application.
 
+![Demo GIF](TrackIt/static/demo.GIF)
+
+
 ## Support
 You can contact our team at our emails: zuh23@drexel.edu, etp44@drexel.edu, ch3436@drexel.edu, jj3249@drexel.edu
 
