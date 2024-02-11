@@ -1,8 +1,0 @@
-﻿For the future of this project, the .gitlab-ci.yml file must now contain scripts that run the python files. The scripts can be setup as follows:
-build-code-job:
-  stage: build
-  script:
-    - echo "Check the ruby version, then build some Ruby project files:"
-    - ruby -v
-    - rake
-The script is a separate file that must be created with the .sh file type. For the next steps of the project I will need to create and implement scripts that correspond to our two python files and any more files that will be created. All the information that I have learned is from this website The `.gitlab-ci.yml` file | GitLab and I will use this website more when I begin to implement the code.
