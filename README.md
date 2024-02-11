@@ -3,6 +3,8 @@ TrackIt is a gamer-focused utility web application that allows gamers to track t
 
 TrackIt is a gaming stat website that tracks the stats that gamers have from various games when the user inputs information such as usernames. Our website then uses the respective video game APIs to get the stats and images that correspond to the user's profiles. 
 
+![Website homepage](TrackIt/static/homepage.png)
+
 ## How to use
 To get started, you can first clone this repository using
 
