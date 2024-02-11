@@ -39,7 +39,7 @@ We continuously improved our website in an agile environment from January 2023 -
 We are not open to contributions from the general public as this project is made as part of the CI102/CI103 classes at Drexel University. 
 
 ## Authors and acknowledgment
-This project was created by our project owner, Evan Palubinski, frontend developer, Connie Ha, first backend developer, Joel Jins, and second backend developer Zaafir Ul Haasan. 
+This project was created by our project owner, Evan Palubinski, frontend developer, Connie Ha, first backend developer, Joel Jins, and full stack developer Zaafir Ul Hasan. 
 
 ## License
 Our project is jointly owned by the four members of our team. 
