@@ -6,26 +6,27 @@ TrackIt is a gaming stat website that tracks the stats that gamers have from var
 ## How to use
 To get started, you can first clone this repository using
 
-git clone https://github.com/ZaafirUlHasan/TrackIt.git
+    git clone https://github.com/ZaafirUlHasan/TrackIt.git
 
 Now, you will have a folder called TrackIt. To launch the app, you can run the following commands:
 
-cd TrackIt
-cd TrackIt
-python3 app.py
+    cd TrackIt
+    cd TrackIt
+    python3 app.py
 
 You can also run app.py in any other way you like for e.g in VSCode.
 You will get a message like this in the terminal:
-'''
- * Serving Flask app 'app'
- * Debug mode: on
-WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
- * Running on http://127.0.0.1:5000
-Press CTRL+C to quit
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 564-246-652
- '''
+
+    * Serving Flask app 'app'
+    * Debug mode: on
+    WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+    * Running on http://127.0.0.1:5000
+    Press CTRL+C to quit
+    * Restarting with stat
+    * Debugger is active!
+    * Debugger PIN: 564-246-652
+
+
 You can now copy the link from 'Running on {link}'(http://127.0.0.1:5000 in this case) into your browser to launch the application.
 
 ## Support
