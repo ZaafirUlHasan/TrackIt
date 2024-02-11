@@ -107,7 +107,7 @@ def getApexStats():
             "total_kills": total_kills,
             "total_matches_played": total_matches_played,
             "approximate_playtime": timeConvertor(approximate_playtime_minutes)
-}
+        }
 
 
         return render_template("myApexPage.html", title="My Apex Page", heading="My Legend List", legend_stats=legend_stats, overall_stats=overall_stats)
