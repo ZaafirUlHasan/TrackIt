@@ -1,11 +1,32 @@
 # TrackIt
 TrackIt is a gamer-focused utility web application that allows gamers to track their stats across tons of games in one centralized place!
 
-## Description
 TrackIt is a gaming stat website that tracks the stats that gamers have from various games when the user inputs information such as usernames. Our website then uses the respective video game APIs to get the stats and images that correspond to the user's profiles. 
 
 ## How to use
-COMPLETEME
+To get started, you can first clone this repository using
+
+git clone https://github.com/ZaafirUlHasan/TrackIt.git
+
+Now, you will have a folder called TrackIt. To launch the app, you can run the following commands:
+
+cd TrackIt
+cd TrackIt
+python3 app.py
+
+You can also run app.py in any other way you like for e.g in VSCode.
+You will get a message like this in the terminal:
+'''
+ * Serving Flask app 'app'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 564-246-652
+ '''
+You can now copy the link from 'Running on {link}'(http://127.0.0.1:5000 in this case) into your browser to launch the application.
 
 ## Support
 You can contact our team at our emails: zuh23@drexel.edu, etp44@drexel.edu, ch3436@drexel.edu, jj3249@drexel.edu
